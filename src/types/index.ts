@@ -70,33 +70,38 @@ export interface Company {
   jobsCount: number;
 }
 
+export type CourseLevel = 'beginner' | 'intermediate' | 'advanced';
+export type CourseType = 'online' | 'offline' | 'hybrid';
+export type NewsCategory = 'job_market' | 'career_tips' | 'industry_news' | 'education' | 'government';
+
 export interface Course {
   id: string;
-  title: LocalizedText;
-  description: LocalizedText;
-  instructor: string;
-  duration: string;
+  title: string;
+  description: string;
+  provider: string;
+  duration: number; // in hours
   price: number;
-  currency: string;
-  category: string;
-  level: 'beginner' | 'intermediate' | 'advanced';
+  level: CourseLevel;
+  type: CourseType;
   rating: number;
   studentsCount: number;
-  image?: string;
-  featured?: boolean;
+  startDate: string;
+  location?: string;
+  image: string;
 }
 
 export interface NewsArticle {
   id: string;
-  title: LocalizedText;
-  content: LocalizedText;
-  excerpt: LocalizedText;
+  title: string;
+  content: string;
+  excerpt: string;
   author: string;
-  publishedAt: Date;
-  category: string;
-  image?: string;
+  publishedAt: string;
+  category: NewsCategory;
+  imageUrl: string;
   views: number;
   featured?: boolean;
+  tags?: string[];
 }
 
 export interface User {

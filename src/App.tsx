@@ -16,6 +16,7 @@ import CoursesPage from '@/pages/CoursesPage';
 import NewsPage from '@/pages/NewsPage';
 import NewsDetailsPage from '@/pages/NewsDetailsPage';
 import ProfilePage from '@/pages/ProfilePage';
+import AdminPage from '@/pages/AdminPage';
 
 // Placeholder components for other pages
 const LoginPage = () => <div className="min-h-screen flex items-center justify-center">
@@ -42,9 +43,9 @@ function App() {
                 <Route path="/companies" element={<CompaniesPage />} />
                 <Route path="/courses" element={<CoursesPage />} />
                 <Route path="/news" element={<NewsPage />} />
-                <Route path="/news/:id" element={<NewsDetailsPage />} />
-                <Route path="/contact" element={<ContactPage />} />
+                <Route path="/news/:id" element={<NewsDetailsPage />} />                <Route path="/contact" element={<ContactPage />} />
                 <Route path="/profile" element={<ProfilePage />} />
+                <Route path="/admin" element={<AdminPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
               </Routes>

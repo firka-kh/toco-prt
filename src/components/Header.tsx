@@ -58,13 +58,19 @@ const Header: React.FC = () => {
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               />
             </div>
-          </div>
-
-          {/* Right Side */}
+          </div>          {/* Right Side */}
           <div className="flex items-center space-x-4">
             <LanguageSwitcher />
-            
+
             <div className="hidden sm:flex items-center space-x-2">
+              <Link
+                to="/profile"
+                className="flex items-center space-x-1 text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
+              >
+                <User className="w-4 h-4" />
+                <span>{t('nav.profile')}</span>
+              </Link>
+              <span className="text-gray-300">|</span>
               <Link
                 to="/login"
                 className="text-gray-700 hover:text-primary-500 font-medium transition-colors duration-200"
@@ -116,9 +122,15 @@ const Header: React.FC = () => {
                   <item.icon className="w-4 h-4" />
                   <span>{item.name}</span>
                 </Link>
-              ))}
-
-              <div className="pt-4 border-t border-gray-200">
+              ))}              <div className="pt-4 border-t border-gray-200">
+                <Link
+                  to="/profile"
+                  className="flex items-center space-x-2 px-3 py-2 text-gray-700 hover:text-primary-500"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <User className="w-4 h-4" />
+                  <span>{t('nav.profile')}</span>
+                </Link>
                 <Link
                   to="/login"
                   className="block px-3 py-2 text-gray-700 hover:text-primary-500"
