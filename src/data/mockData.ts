@@ -297,8 +297,8 @@ export const mockCourses: Course[] = [
       rus: 'Основы программирования'
     },
     description: {
-      taj: 'Омӯзиши асосҳои барномасозӣ аз сифр',
-      rus: 'Изучение основ программирования с нуля'
+      taj: 'Омӯзиши асосҳои барномасозӣ аз сифр бо забони Python',
+      rus: 'Изучение основ программирования с нуля на языке Python'
     },
     instructor: 'Али Ҳасанов',
     duration: '3 моҳ',
@@ -328,6 +328,63 @@ export const mockCourses: Course[] = [
     level: 'intermediate',
     rating: 4.6,
     studentsCount: 89
+  },
+  {
+    id: '3',
+    title: {
+      taj: 'Дизайни графикӣ',
+      rus: 'Графический дизайн'
+    },
+    description: {
+      taj: 'Омӯзиши асосҳои дизайни графикӣ ва кор бо Photoshop, Illustrator',
+      rus: 'Изучение основ графического дизайна и работы с Photoshop, Illustrator'
+    },
+    instructor: 'Фарида Юсуфова',
+    duration: '4 моҳ',
+    price: 1500,
+    currency: 'сомони',
+    category: 'Дизайн',
+    level: 'beginner',
+    rating: 4.7,
+    studentsCount: 203
+  },
+  {
+    id: '4',
+    title: {
+      taj: 'Муҳосибӣ ва молия',
+      rus: 'Бухгалтерия и финансы'
+    },
+    description: {
+      taj: 'Курси муҳосибии асосӣ ва кор бо барномаҳои молиявӣ',
+      rus: 'Курс основ бухгалтерии и работы с финансовыми программами'
+    },
+    instructor: 'Ҷамила Раҳимова',
+    duration: '6 моҳ',
+    price: 2000,
+    currency: 'сомони',
+    category: 'Молия',
+    level: 'intermediate',
+    rating: 4.9,
+    studentsCount: 145
+  },
+  {
+    id: '5',
+    title: {
+      taj: 'Фурӯши самараноқ',
+      rus: 'Эффективные продажи'
+    },
+    description: {
+      taj: 'Техникаҳои фурӯш ва кор бо муштариён',
+      rus: 'Техники продаж и работа с клиентами'
+    },
+    instructor: 'Бахтиёр Саидов',
+    duration: '1 моҳ',
+    price: 600,
+    currency: 'сомони',
+    category: 'Фурӯш',
+    level: 'beginner',
+    rating: 4.5,
+    studentsCount: 78
   }
 ];
 

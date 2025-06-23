@@ -16,7 +16,7 @@ const JobsPage: React.FC = () => {
 
     // Apply filters
     if (filters.keywords) {
-      results = results.filter(job => 
+      results = results.filter(job =>
         getLocalizedText(job.title).toLowerCase().includes(filters.keywords!.toLowerCase()) ||
         job.company.toLowerCase().includes(filters.keywords!.toLowerCase()) ||
         getLocalizedText(job.description).toLowerCase().includes(filters.keywords!.toLowerCase())
@@ -77,7 +77,7 @@ const JobsPage: React.FC = () => {
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             {language === 'taj' ? 'Ҷустуҷӯи вазифаҳо' : 'Поиск вакансий'}
           </h1>
-          
+
           {/* Search Bar */}
           <div className="bg-white rounded-lg shadow-md p-6">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -137,7 +137,7 @@ const JobsPage: React.FC = () => {
                   {language === 'taj' ? 'Пок кардан' : 'Очистить все'}
                 </button>
               </div>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 {/* Category */}
                 <div>
@@ -214,7 +214,7 @@ const JobsPage: React.FC = () => {
             {/* Sort and Results Count */}
             <div className="flex justify-between items-center mb-6">
               <div className="text-gray-600">
-                {language === 'taj' 
+                {language === 'taj'
                   ? `${filteredJobs.length} вазифа ёфт шуд`
                   : `Найдено ${filteredJobs.length} вакансий`
                 }
@@ -239,17 +239,12 @@ const JobsPage: React.FC = () => {
                   </option>
                 </select>
               </div>
-            </div>
-
-            {/* Job Cards */}
+            </div>            {/* Job Cards */}
             <div className="space-y-6">
               {filteredJobs.map(job => (
-                <JobCard 
-                  key={job.id} 
+                <JobCard
+                  key={job.id}
                   job={job}
-                  onApply={(jobId) => console.log('Apply to job:', jobId)}
-                  onSave={(jobId) => console.log('Save job:', jobId)}
-                  onShare={(jobId) => console.log('Share job:', jobId)}
                 />
               ))}
             </div>
@@ -261,7 +256,7 @@ const JobsPage: React.FC = () => {
                   {language === 'taj' ? 'Вазифаҳо ёфт нашуд' : 'Вакансии не найдены'}
                 </h3>
                 <p className="text-gray-500">
-                  {language === 'taj' 
+                  {language === 'taj'
                     ? 'Параметрҳои ҷустуҷӯро тағйир диҳед ё баъдтар кӯшиш кунед'
                     : 'Попробуйте изменить параметры поиска'
                   }
@@ -299,7 +294,7 @@ const JobsPage: React.FC = () => {
                     {language === 'taj' ? 'Ҷустуҷӯро беҳтар кунед' : 'Улучшите поиск'}
                   </h4>
                   <p>
-                    {language === 'taj' 
+                    {language === 'taj'
                       ? 'Калимаҳои калидиро муайян кунед ва филтрҳоро истифода баред'
                       : 'Используйте ключевые слова и фильтры для лучших результатов'
                     }
@@ -310,7 +305,7 @@ const JobsPage: React.FC = () => {
                     {language === 'taj' ? 'Резюмеатонро нав кунед' : 'Обновите резюме'}
                   </h4>
                   <p>
-                    {language === 'taj' 
+                    {language === 'taj'
                       ? 'Резюмеи навшуда шумро дар рӯйхатҳои пешин нишон медиҳад'
                       : 'Свежее резюме показывается выше в результатах поиска'
                     }
