@@ -10,7 +10,7 @@ export const formatDateRelative = (date: Date, language: 'taj' | 'rus' = 'rus'):
   const now = new Date();
   const diffTime = Math.abs(now.getTime() - date.getTime());
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-  
+
   if (language === 'taj') {
     if (diffDays === 0) return 'Имрӯз';
     if (diffDays === 1) return 'Дирӯз';
