@@ -15,12 +15,15 @@
 - ✅ Все mock-данные загружены
 
 ### Основные разделы для изучения:
-1. **Главная** - обзор портала со статистикой
-2. **Поиск работы** - каталог вакансий с фильтрами
-3. **Обучение** - курсы профессионального развития  
-4. **Новости** - актуальная информация рынка труда
-5. **Профиль** - личный кабинет пользователя
-6. **Админ-панель** - управление порталом (добавьте /admin к URL)
+1. **Главная** - https://firka-kh.github.io/toco-prt/#/
+2. **Поиск работы** - https://firka-kh.github.io/toco-prt/#/jobs
+3. **Резюме** - https://firka-kh.github.io/toco-prt/#/resumes  
+4. **Компании** - https://firka-kh.github.io/toco-prt/#/companies
+5. **Обучение** - https://firka-kh.github.io/toco-prt/#/courses
+6. **Новости** - https://firka-kh.github.io/toco-prt/#/news
+7. **Контакты** - https://firka-kh.github.io/toco-prt/#/contact
+8. **Профиль** - https://firka-kh.github.io/toco-prt/#/profile
+9. **Админ-панель** - https://firka-kh.github.io/toco-prt/#/admin
 
 ## Автоматическое развертывание
 
