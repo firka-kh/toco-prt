@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портал рынка труда Республики Таджикистан</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #059669 0%, #dc2626 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #059669 0%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 gradient-bg rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold">🇹🇯</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-900">Портал рынка труда</h1>
+                        <p class="text-xs text-gray-500">Республики Таджикистан</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#" class="text-gray-700 hover:text-green-600">Поиск работы</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Резюме</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Компании</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Обучение</a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">Новости</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <button class="text-sm bg-gray-100 px-3 py-1 rounded">🇹🇯 / 🇷🇺</button>
+                    <a href="#" class="text-green-600 hover:text-green-700">Войти</a>
+                    <a href="#" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg py-16 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl lg:text-6xl font-bold mb-6">
+                Портал рынка труда Республики Таджикистан
+            </h1>
+            <p class="text-xl mb-8 max-w-3xl mx-auto opacity-90">
+                Найдите подходящую работу или найдите нужных сотрудников
+            </p>
+            <div class="max-w-4xl mx-auto bg-white rounded-xl p-6">
+                <div class="flex flex-col md:flex-row gap-4">
+                    <input type="text" placeholder="Поиск вакансии, компании или профессии..."
+                        class="flex-1 px-4 py-3 rounded-lg border border-gray-300 text-gray-900">
+                    <select class="px-4 py-3 rounded-lg border border-gray-300 text-gray-900">
+                        <option>Выберите город</option>
+                        <option>Душанбе</option>
+                        <option>Худжанд</option>
+                        <option>Бохтар</option>
+                    </select>
+                    <button class="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700">
+                        Найти
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-green-600">2,543</div>
+                    <div class="text-gray-600">Активных вакансий</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-blue-600">8,921</div>
+                    <div class="text-gray-600">Соискателей</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-purple-600">1,234</div>
+                    <div class="text-gray-600">Компаний</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-red-600">156</div>
+                    <div class="text-gray-600">Новых вакансий сегодня</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Возможности портала</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">💼</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Поиск работы</h3>
+                    <p class="text-gray-600">Найдите идеальную вакансию среди тысяч предложений от ведущих компаний
+                        Таджикистана</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">👥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Поиск персонала</h3>
+                    <p class="text-gray-600">Найдите квалифицированных кандидатов для вашей компании из обширной базы
+                        резюме</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">📚</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Обучение</h3>
+                    <p class="text-gray-600">Повышайте квалификацию через курсы профессионального развития и обучения
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Notice -->
+    <section class="py-16 bg-yellow-50 border-l-4 border-yellow-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <span class="text-4xl">⚠️</span>
+                </div>
+                <div class="ml-4">
+                    <h3 class="text-lg font-semibold text-yellow-800">Демонстрационная версия</h3>
+                    <div class="mt-2 text-yellow-700">
+                        <p class="mb-2">Это демонстрационная версия портала. Для полного функционала необходимо:</p>
+                        <ol class="list-decimal list-inside space-y-1 text-sm">
+                            <li>Установить Node.js (версия 18+)</li>
+                            <li>Запустить команду: <code class="bg-yellow-200 px-2 py-1 rounded">npm install</code></li>
+                            <li>Запустить сервер: <code class="bg-yellow-200 px-2 py-1 rounded">npm run dev</code></li>
+                            <li>Открыть <code class="bg-yellow-200 px-2 py-1 rounded">http://localhost:5173</code></li>
+                        </ol>
+                        <p class="mt-3 text-sm">
+                            📋 Подробная инструкция в файле <strong>QUICKSTART.md</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Современные технологии</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-blue-500 text-4xl mb-2">⚛️</div>
+                    <div class="font-semibold">React 18</div>
+                    <div class="text-sm text-gray-600">с TypeScript</div>
+                </div>
+                <div>
+                    <div class="text-purple-500 text-4xl mb-2">⚡</div>
+                    <div class="font-semibold">Vite</div>
+                    <div class="text-sm text-gray-600">Быстрая сборка</div>
+                </div>
+                <div>
+                    <div class="text-cyan-500 text-4xl mb-2">🎨</div>
+                    <div class="font-semibold">Tailwind CSS</div>
+                    <div class="text-sm text-gray-600">Стилизация</div>
+                </div>
+                <div>
+                    <div class="text-green-500 text-4xl mb-2">🌍</div>
+                    <div class="font-semibold">i18n</div>
+                    <div class="text-sm text-gray-600">Мультиязычность</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 gradient-bg rounded flex items-center justify-center">
+                            <span class="text-white text-sm font-bold">🇹🇯</span>
+                        </div>
+                        <span class="font-bold text-lg">Портал рынка труда РТ</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Современная платформа для поиска работы и персонала в Республике Таджикистан
+                    </p>
+                    <div class="flex space-x-4">
+                        <span class="text-2xl">🇹🇯</span>
+                        <span class="text-2xl">🇷🇺</span>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Разделы</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white">Поиск работы</a></li>
+                        <li><a href="#" class="hover:text-white">Резюме</a></li>
+                        <li><a href="#" class="hover:text-white">Компании</a></li>
+                        <li><a href="#" class="hover:text-white">Обучение</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-4">Поддержка</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#" class="hover:text-white">Помощь</a></li>
+                        <li><a href="#" class="hover:text-white">Контакты</a></li>
+                        <li><a href="#" class="hover:text-white">О проекте</a></li>
+                        <li><a href="#" class="hover:text-white">Документация</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Портал рынка труда Республики Таджикистан. Демонстрационная версия.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
